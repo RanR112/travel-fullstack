@@ -1,0 +1,682 @@
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    transition: .3s ease-in;
+
+    .logo {
+        color: var(--blackColor);
+        font-weight: 600;
+        align-items: center;
+        justify-items: center;
+        display: flex;
+
+        .icon {
+            width: 4rem;
+        }
+
+        h1 {
+            margin-top: 10px;
+            margin-left: 8px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        
+
+        .navBar {
+            position: absolute;
+            background: var(--whiteColor2);
+            height: max-content;
+            width: 80%;
+            border-radius: 1rem;
+            top: -500rem;
+            left: 50%;
+            padding: 1rem;
+            transform: translate(-50%);
+            z-index: 2000;
+            box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+            transition: .5s ease-in-out;
+
+            .logo {
+                .icon {
+                    width: 5rem;
+                }
+            }
+
+            .navLists {
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin: auto;
+                padding: .5rem 0;
+                
+                .navItem {
+                    padding-left: .5rem 0;
+                    margin: .3rem 0;
+                    
+                    .dark {
+                        color: var(--textColor);
+                        font-size: .9rem;
+                        font-weight: 600;
+                    }
+
+                    .navLink {
+                        color: var(--textColor) !important;
+                        font-size: .9rem;
+                        font-weight: 600;
+                        &:hover {
+                            color: var(--PrimaryColor)!important;
+                        }
+                    }
+                }
+
+                .mode {
+                    .switch {
+                        position: relative;
+                        display: inline-block;
+                        width: 60px;
+                        height: 34px;
+
+                        input {
+                            display: none;
+                        }
+                    }
+                
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        transition: .4s;
+                        border-radius: 34px;
+                
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            height: 26px;
+                            width: 26px;
+                            left: 4px;
+                            bottom: 4px;
+                            background-color: white;
+                            transition: .4s;
+                            border-radius: 50%;
+                        }
+                    }
+                
+                    input:checked + .slider {
+                        background-color: black;
+                    }
+                
+                    input:focus + .slider {
+                        box-shadow: 0 0 1px black;
+                    }
+                
+                    input:checked + .slider:before {
+                        transform: translateX(26px);
+                    }
+                
+                    .slider::before {
+                        border-radius: 50%;
+                        transform: scale(1);
+                        width: 24px;
+                        height: 25px;
+                    }
+                
+                    .slider::after {
+                        content: "";
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        background: white;
+                        border-radius: 50%;
+                        left: 4px;
+                        bottom: 4.5px;
+                        transition: 0.4s;
+                    }
+                
+                    input:checked + .slider::after {
+                        transform: translateX(26px);
+                    }
+                }
+            }
+
+            .closeNavbar {
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+                color: var(--PrimaryColor);
+                &:hover {
+                    color: var(--SecondaryColor);
+                }
+            }
+        }
+
+        .activeNavbar {
+            top: 7rem;
+        }
+    }
+
+    .toggleNavbar {
+        .icon {
+            font-size: 25px;
+            color: var(--nav);
+        }
+        &:hover.icon{
+            color: var(--SecondaryColor);
+        }
+    }
+}
+
+// =============== MEDIA QUERIES ==============
+
+@media screen and (min-width: 769px) {
+    .toggleNavbar, .closeNavbar {
+        display: none;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+
+        .logo {
+            .icon {
+                width: 4.5rem;
+            }
+        }
+
+        .navBar {
+            .navLists {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+                .dark {
+                    color: var(--nav);
+                    padding: 0 0.3rem 0 0.45rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+
+                .navItem {
+                    .navLink {
+                        color: var(--nav);
+                        padding: 0 0.45rem;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        display: inline-block;
+                        position: relative;
+
+                        &::after {
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 0;
+                            content: "";
+                            display: block;
+                            height: 2px;
+                            left: 50%;
+                            position: absolute;
+                            background: var(--cradHover);
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                            width: 0;
+                        }
+
+                        &:hover{
+                            color: var(--cradHover);
+                            transition: .3s;
+                        }
+
+                        &:hover::after {
+                            width: 100%; 
+                            left: 0; 
+                        }
+                    }
+                }
+                
+                .mode {
+                    .switch {
+                        position: relative;
+                        display: inline-block;
+                        width: 60px;
+                        height: 34px;
+                        margin-top: .7rem;
+
+                        input {
+                            display: none;
+                        }
+                    }
+                
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: var(--layer);
+                        transition: .4s;
+                        border-radius: 34px;
+                
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            height: 26px;
+                            width: 26px;
+                            left: 4px;
+                            bottom: 4px;
+                            background-color: var(--blackColor);
+                            transition: .4s;
+                            border-radius: 50%;
+                        }
+                    }
+                
+                    input:checked + .slider {
+                        background-color: var(--layer);
+                    }
+                
+                    input:focus + .slider {
+                        box-shadow: 0 0 1px black
+                    }
+                
+                    input:checked + .slider:before {
+                        transform: translateX(26px);
+                    }
+                
+                    .slider::before {
+                        border-radius: 50%;
+                        transform: scale(1);
+                        width: 24px;
+                        height: 25px;
+                    }
+                
+                    .slider::after {
+                        content: "";
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        background: var(--SecondaryColor);
+                        border-radius: 50%;
+                        left: 4px;
+                        bottom: 4.5px;
+                        transition: 0.4s;
+                    }
+                
+                    input:checked + .slider::after {
+                        transform: translateX(26px);
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .header {
+        .navBar {
+            .navLists {
+                .navItem {
+                    padding: 0 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .header {
+        padding: 1rem 8.5rem;
+    }
+}
+
+
+.header-scroll {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--whiteColor2);
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+    transition: .3s ease-in;
+
+    .logo {
+        color: var(--blackColor);
+        font-weight: 600;
+        align-items: center;
+        justify-items: center;
+        display: flex;
+
+        .icon {
+            width: 4rem;
+        }
+
+        h1 {
+            margin-top: 10px;
+            margin-left: 8px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        
+
+        .navBar {
+            position: absolute;
+            background: var(--whiteColor2);
+            height: max-content;
+            width: 80%;
+            border-radius: 1rem;
+            top: -500rem;
+            left: 50%;
+            padding: 1rem;
+            transform: translate(-50%);
+            z-index: 2000;
+            box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+            transition: .5s ease-in-out;
+
+            .logo {
+                .icon {
+                    width: 5rem;
+                }
+            }
+
+            .navLists {
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin: auto;
+                padding: .5rem 0;
+                
+                .navItem {
+                    padding-left: .5rem 0;
+                    margin: .3rem 0;
+                    
+                    .dark {
+                        color: var(--textColor);
+                        font-size: .9rem;
+                        font-weight: 600;
+                    }
+
+                    .navLink {
+                        color: var(--textColor) !important;
+                        font-size: .9rem;
+                        font-weight: 600;
+                        &:hover {
+                            color: var(--PrimaryColor)!important;
+                        }
+                    }
+                }
+
+                .mode {
+                    .switch {
+                        position: relative;
+                        display: inline-block;
+                        width: 60px;
+                        height: 34px;
+
+                        input {
+                            display: none;
+                        }
+                    }
+                
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        transition: .4s;
+                        border-radius: 34px;
+                
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            height: 26px;
+                            width: 26px;
+                            left: 4px;
+                            bottom: 4px;
+                            background-color: white;
+                            transition: .4s;
+                            border-radius: 50%;
+                        }
+                    }
+                
+                    input:checked + .slider {
+                        background-color: black;
+                    }
+                
+                    input:focus + .slider {
+                        box-shadow: 0 0 1px black;
+                    }
+                
+                    input:checked + .slider:before {
+                        transform: translateX(26px);
+                    }
+                
+                    .slider::before {
+                        border-radius: 50%;
+                        transform: scale(1);
+                        width: 24px;
+                        height: 25px;
+                    }
+                
+                    .slider::after {
+                        content: "";
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        background: white;
+                        border-radius: 50%;
+                        left: 4px;
+                        bottom: 4.5px;
+                        transition: 0.4s;
+                    }
+                
+                    input:checked + .slider::after {
+                        transform: translateX(26px);
+                    }
+                }
+            }
+
+            .closeNavbar {
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+                color: var(--PrimaryColor);
+                &:hover {
+                    color: var(--SecondaryColor);
+                }
+            }
+        }
+
+        .activeNavbar {
+            top: 7rem;
+        }
+    }
+
+    .toggleNavbar {
+        .icon {
+            font-size: 25px;
+            color: var(--PrimaryColor);
+        }
+        &:hover.icon{
+            color: var(--SecondaryColor);
+        }
+    }
+}
+
+// =============== MEDIA QUERIES ==============
+
+@media screen and (min-width: 769px) {
+    .toggleNavbar, .closeNavbar {
+        display: none;
+    }
+
+    .header-scroll {
+        padding: 1.5rem 2rem;
+
+        .logo {
+            .icon {
+                width: 4.5rem;
+            }
+        }
+
+        .navBar {
+            .navLists {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+                .dark {
+                    color: var(--textColor);
+                    padding: 0 0.3rem 0 0.45rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+
+                .navItem {
+                    .navLink {
+                        color: var(--textColor);
+                        padding: 0 0.45rem;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        display: inline-block;
+                        position: relative;
+
+                        &::after {
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 0;
+                            content: "";
+                            display: block;
+                            height: 2px;
+                            left: 50%;
+                            position: absolute;
+                            background: var(--PrimaryColor);
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                            width: 0;
+                        }
+
+                        &:hover{
+                            color: var(--PrimaryColor);
+                            transition: .3s;
+                        }
+
+                        &:hover::after {
+                            width: 100%; 
+                            left: 0;
+                        }
+
+                        &:active {
+                            border-bottom: 2px solid var(--PrimaryColor);
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+                
+                .mode {
+                    .switch {
+                        position: relative;
+                        display: inline-block;
+                        width: 60px;
+                        height: 34px;
+                        margin-top: .7rem;
+
+                        input {
+                            display: none;
+                        }
+                    }
+                
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        transition: .4s;
+                        border-radius: 34px;
+                
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            height: 26px;
+                            width: 26px;
+                            left: 4px;
+                            bottom: 4px;
+                            background-color: white;
+                            transition: .4s;
+                            border-radius: 50%;
+                        }
+                    }
+                
+                    input:checked + .slider {
+                        background-color: black;
+                    }
+                
+                    input:focus + .slider {
+                        box-shadow: 0 0 1px black;
+                    }
+                
+                    input:checked + .slider:before {
+                        transform: translateX(26px);
+                    }
+                
+                    .slider::before {
+                        border-radius: 50%;
+                        transform: scale(1);
+                        width: 24px;
+                        height: 25px;
+                    }
+                
+                    .slider::after {
+                        content: "";
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        background: white;
+                        border-radius: 50%;
+                        left: 4px;
+                        bottom: 4.5px;
+                        transition: 0.4s;
+                    }
+                
+                    input:checked + .slider::after {
+                        transform: translateX(26px);
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .header-scroll {
+        .navBar {
+            .navLists {
+                .navItem {
+                    padding: 0 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .header-scroll {
+        padding: 1rem 8.5rem;
+    }
+}

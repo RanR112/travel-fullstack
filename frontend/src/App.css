@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Colors & Styling */
+:root {
+    --PrimaryColor: rgb(0, 67, 168);
+    --SecondaryColor: rgb(16, 134, 203);
+    --gradientColor : linear-gradient(to right, rgb(16, 134, 203), rgb(0, 67, 168));
+    --bgtransparent : rgba(255, 255, 255, 0.75);
+    --whiteColor: rgb(255, 255, 255);
+    --blackColor: rgb(27, 45, 54);
+    --textColor: rgb(88, 88, 95);
+    --whiteColor2: rgb(255, 255, 245);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cradBG: rgb(225, 225, 235);
+    --cradHover: rgb(208, 230, 255);
+    --layer: rgb(49, 89, 134);
+    --placeH: rgb(132, 132, 132);
+    --nav: rgb(0,0,0);
+}
+
+[data-theme='dark'] {
+    --PrimaryColor: rgb(255, 188, 87);
+    --SecondaryColor: rgb(239, 121, 52);
+    --gradientColor: linear-gradient(to right, rgb(255, 188, 87), rgb(239, 121, 52));
+    --bgtransparent : rgba(28, 28, 28, 0.75);
+    --whiteColor: rgb(0, 0, 0);
+    --blackColor: rgb(230,230,230);
+    --textColor: rgb(228, 228, 238);
+    --whiteColor2: rgb(26, 26, 26);
+    --greyText: rgb(223, 223, 223);
+    --inputColor: rgb(56, 56, 56);
+    --bodyColor: rgb(87, 87, 87);
+    --cradBG: rgb(60, 60, 64);
+    --cradHover: rgb(105, 88, 81);
+    --layer: rgb(106, 60, 28);
+    --placeH: rgb(173, 173, 173);
+    --nav: rgb(255,255,255);
+}
+
+.App {
+    color: var(--greyText);
+    background-color: var(--whiteColor2);
+    font-size: large;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--whiteColor2);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.section {
+    padding: 4rem 0 2rem;
+}
+
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.btn {
+    padding: .6rem 1.5rem;
+    background: var(--gradientColor);
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn a {
+    color: var(--whiteColor);
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: var(--SecondaryColor);
+}
+
+img, video {
+    width: 100%;
+    height: auto;
+}
+
+input {
+    font-size: 100%;
+}
+
+body {
+    background: var(--bodyColor);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1240px) {
+    .container {
+        width: 80% !important;
+        margin: auto !important;
+    }
+
+    .section {
+        padding: 6rem 0 4rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    body {
+        zoom: 1.7;
+    }
+}

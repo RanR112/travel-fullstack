@@ -1,0 +1,547 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  transition: 0.3s ease-in;
+}
+.header .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+}
+.header .logo .icon {
+  width: 4rem;
+}
+.header .logo h1 {
+  margin-top: 10px;
+  margin-left: 8px;
+}
+@media screen and (max-width: 768px) {
+  .header .navBar {
+    position: absolute;
+    background: var(--whiteColor2);
+    height: -moz-max-content;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    top: -500rem;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+    transition: 0.5s ease-in-out;
+  }
+  .header .navBar .logo .icon {
+    width: 5rem;
+  }
+  .header .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navLists .navItem {
+    padding-left: 0.5rem 0;
+    margin: 0.3rem 0;
+  }
+  .header .navBar .navLists .navItem .dark {
+    color: var(--textColor);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--textColor) !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--PrimaryColor) !important;
+  }
+  .header .navBar .navLists .mode .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .header .navBar .navLists .mode .switch input {
+    display: none;
+  }
+  .header .navBar .navLists .mode .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  .header .navBar .navLists .mode .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  .header .navBar .navLists .mode input:checked + .slider {
+    background-color: black;
+  }
+  .header .navBar .navLists .mode input:focus + .slider {
+    box-shadow: 0 0 1px black;
+  }
+  .header .navBar .navLists .mode input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .header .navBar .navLists .mode .slider::before {
+    border-radius: 50%;
+    transform: scale(1);
+    width: 24px;
+    height: 25px;
+  }
+  .header .navBar .navLists .mode .slider::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4.5px;
+    transition: 0.4s;
+  }
+  .header .navBar .navLists .mode input:checked + .slider::after {
+    transform: translateX(26px);
+  }
+  .header .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--PrimaryColor);
+  }
+  .header .navBar .closeNavbar:hover {
+    color: var(--SecondaryColor);
+  }
+  .header .activeNavbar {
+    top: 7rem;
+  }
+}
+.header .toggleNavbar .icon {
+  font-size: 25px;
+  color: var(--nav);
+}
+.header .toggleNavbar:hover.icon {
+  color: var(--SecondaryColor);
+}
+
+@media screen and (min-width: 769px) {
+  .toggleNavbar, .closeNavbar {
+    display: none;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .header .logo .icon {
+    width: 4.5rem;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .header .navBar .navLists .dark {
+    color: var(--nav);
+    padding: 0 0.3rem 0 0.45rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--nav);
+    padding: 0 0.45rem;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+  }
+  .header .navBar .navLists .navItem .navLink::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--cradHover);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--cradHover);
+    transition: 0.3s;
+  }
+  .header .navBar .navLists .navItem .navLink:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  .header .navBar .navLists .mode .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 0.7rem;
+  }
+  .header .navBar .navLists .mode .switch input {
+    display: none;
+  }
+  .header .navBar .navLists .mode .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--layer);
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  .header .navBar .navLists .mode .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--blackColor);
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  .header .navBar .navLists .mode input:checked + .slider {
+    background-color: var(--layer);
+  }
+  .header .navBar .navLists .mode input:focus + .slider {
+    box-shadow: 0 0 1px black;
+  }
+  .header .navBar .navLists .mode input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .header .navBar .navLists .mode .slider::before {
+    border-radius: 50%;
+    transform: scale(1);
+    width: 24px;
+    height: 25px;
+  }
+  .header .navBar .navLists .mode .slider::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: var(--SecondaryColor);
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4.5px;
+    transition: 0.4s;
+  }
+  .header .navBar .navLists .mode input:checked + .slider::after {
+    transform: translateX(26px);
+  }
+}
+@media screen and (min-width: 960px) {
+  .header .navBar .navLists .navItem {
+    padding: 0 0.7rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .header {
+    padding: 1rem 8.5rem;
+  }
+}
+.header-scroll {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--whiteColor2);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  transition: 0.3s ease-in;
+}
+.header-scroll .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+}
+.header-scroll .logo .icon {
+  width: 4rem;
+}
+.header-scroll .logo h1 {
+  margin-top: 10px;
+  margin-left: 8px;
+}
+@media screen and (max-width: 768px) {
+  .header-scroll .navBar {
+    position: absolute;
+    background: var(--whiteColor2);
+    height: -moz-max-content;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    top: -500rem;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+    transition: 0.5s ease-in-out;
+  }
+  .header-scroll .navBar .logo .icon {
+    width: 5rem;
+  }
+  .header-scroll .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  .header-scroll .navBar .navLists .navItem {
+    padding-left: 0.5rem 0;
+    margin: 0.3rem 0;
+  }
+  .header-scroll .navBar .navLists .navItem .dark {
+    color: var(--textColor);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header-scroll .navBar .navLists .navItem .navLink {
+    color: var(--textColor) !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header-scroll .navBar .navLists .navItem .navLink:hover {
+    color: var(--PrimaryColor) !important;
+  }
+  .header-scroll .navBar .navLists .mode .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .header-scroll .navBar .navLists .mode .switch input {
+    display: none;
+  }
+  .header-scroll .navBar .navLists .mode .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  .header-scroll .navBar .navLists .mode .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  .header-scroll .navBar .navLists .mode input:checked + .slider {
+    background-color: black;
+  }
+  .header-scroll .navBar .navLists .mode input:focus + .slider {
+    box-shadow: 0 0 1px black;
+  }
+  .header-scroll .navBar .navLists .mode input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .header-scroll .navBar .navLists .mode .slider::before {
+    border-radius: 50%;
+    transform: scale(1);
+    width: 24px;
+    height: 25px;
+  }
+  .header-scroll .navBar .navLists .mode .slider::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4.5px;
+    transition: 0.4s;
+  }
+  .header-scroll .navBar .navLists .mode input:checked + .slider::after {
+    transform: translateX(26px);
+  }
+  .header-scroll .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--PrimaryColor);
+  }
+  .header-scroll .navBar .closeNavbar:hover {
+    color: var(--SecondaryColor);
+  }
+  .header-scroll .activeNavbar {
+    top: 7rem;
+  }
+}
+.header-scroll .toggleNavbar .icon {
+  font-size: 25px;
+  color: var(--PrimaryColor);
+}
+.header-scroll .toggleNavbar:hover.icon {
+  color: var(--SecondaryColor);
+}
+
+@media screen and (min-width: 769px) {
+  .toggleNavbar, .closeNavbar {
+    display: none;
+  }
+  .header-scroll {
+    padding: 1.5rem 2rem;
+  }
+  .header-scroll .logo .icon {
+    width: 4.5rem;
+  }
+  .header-scroll .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .header-scroll .navBar .navLists .dark {
+    color: var(--textColor);
+    padding: 0 0.3rem 0 0.45rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .header-scroll .navBar .navLists .navItem .navLink {
+    color: var(--textColor);
+    padding: 0 0.45rem;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+  }
+  .header-scroll .navBar .navLists .navItem .navLink::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--PrimaryColor);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .header-scroll .navBar .navLists .navItem .navLink:hover {
+    color: var(--PrimaryColor);
+    transition: 0.3s;
+  }
+  .header-scroll .navBar .navLists .navItem .navLink:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  .header-scroll .navBar .navLists .navItem .navLink:active {
+    border-bottom: 2px solid var(--PrimaryColor);
+    color: var(--PrimaryColor);
+  }
+  .header-scroll .navBar .navLists .mode .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 0.7rem;
+  }
+  .header-scroll .navBar .navLists .mode .switch input {
+    display: none;
+  }
+  .header-scroll .navBar .navLists .mode .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  .header-scroll .navBar .navLists .mode .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  .header-scroll .navBar .navLists .mode input:checked + .slider {
+    background-color: black;
+  }
+  .header-scroll .navBar .navLists .mode input:focus + .slider {
+    box-shadow: 0 0 1px black;
+  }
+  .header-scroll .navBar .navLists .mode input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .header-scroll .navBar .navLists .mode .slider::before {
+    border-radius: 50%;
+    transform: scale(1);
+    width: 24px;
+    height: 25px;
+  }
+  .header-scroll .navBar .navLists .mode .slider::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4.5px;
+    transition: 0.4s;
+  }
+  .header-scroll .navBar .navLists .mode input:checked + .slider::after {
+    transform: translateX(26px);
+  }
+}
+@media screen and (min-width: 960px) {
+  .header-scroll .navBar .navLists .navItem {
+    padding: 0 0.7rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .header-scroll {
+    padding: 1rem 8.5rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */

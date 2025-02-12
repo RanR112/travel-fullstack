@@ -1,0 +1,177 @@
+.home {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  min-height: 100vh;
+}
+.home .layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--layer);
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  mix-blend-mode: hard-light;
+}
+.home img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .homeContent {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 6rem 1.5rem;
+  display: flex;
+  row-gap: 3rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  z-index: 100;
+}
+.home .homeContent .textDiv {
+  padding: 2rem 0;
+}
+.home .homeContent .textDiv .smallText {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.home .homeContent .textDiv .homeTitle {
+  position: relative;
+  font-size: 1.8rem;
+}
+.home .homeContent .cardDiv {
+  position: relative;
+  padding: 2rem 1rem;
+  background: var(--bgtransparent);
+  border-radius: 10px;
+  gap: 1rem;
+}
+.home .homeContent .cardDiv label {
+  display: block;
+  color: var(--blackColor);
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.home .homeContent .cardDiv .input {
+  height: 40px;
+  padding: 0 1rem;
+  background: var(--inputColor);
+  border-radius: 3rem;
+}
+.home .homeContent .cardDiv .input input, .home .homeContent .cardDiv .input select {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+.home .homeContent .cardDiv .input input::-moz-placeholder, .home .homeContent .cardDiv .input select::-moz-placeholder {
+  font-size: 13px;
+  color: var(--placeH);
+}
+.home .homeContent .cardDiv .input input::placeholder, .home .homeContent .cardDiv .input select::placeholder {
+  font-size: 13px;
+  color: var(--placeH);
+}
+.home .homeContent .cardDiv .input select {
+  cursor: pointer;
+}
+.home .homeContent .cardDiv .input option {
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+}
+.home .homeContent .cardDiv .input .icon {
+  font-size: 18px;
+  color: var(--SecondaryColor) !important;
+  margin-left: 10px;
+}
+.home .homeContent .cardDiv .searchOptions {
+  position: absolute;
+  background: var(--gradientColor);
+  width: 200px;
+  bottom: -0.7rem;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+  padding: 5px 1rem;
+  border-radius: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+  justify-content: center;
+  cursor: pointer;
+  color: var(--whiteColor);
+}
+.home .homeContent .cardDiv .searchOptions:hover {
+  background: var(--SecondaryColor);
+}
+.home .homeContent .cardDiv .searchOptions .icon {
+  font-size: 18px;
+}
+.home .homeContent .cardDiv .searchOptions span {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 500px) {
+  .home .homeContent .textDiv .smallText {
+    font-size: 16px;
+  }
+  .home .homeContent .textDiv .homeTitle {
+    position: relative;
+    font-size: 2.3rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .home .homeContent .cardDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 660px) {
+  .home .homeContent .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 940px) {
+  .home {
+    height: 85vh;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .home {
+    height: 80vh;
+  }
+  .home .homeContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .home .homeContent .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .home .homeContent .cardDiv .input {
+    margin-bottom: 1rem;
+  }
+  .home .homeContent .cardDiv .searchOptions {
+    bottom: -1rem;
+    padding: 8px 1rem;
+  }
+  .home .homeContent .cardDiv .searchOptions span {
+    font-size: 17px;
+  }
+}
+/*# sourceMappingURL=home.css.map */

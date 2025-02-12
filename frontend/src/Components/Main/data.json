@@ -1,0 +1,194 @@
+[
+
+    {
+        "id":1,
+        "imgSrc":"https://i.imgur.com/Ahh19c2.jpeg",
+        "destTitle":"Kawah Putih",
+        "location":"Bandung",
+        "tag":"Wisata Alam",
+        "fees":"Rp 80.000",
+        "loc":"https://maps.app.goo.gl/LTYH4kTCfa8cVNvR9",
+        "description":"Kawah Putih adalah sebuah kawah vulkanik yang terletak di Gunung Patuha, Jawa Barat. Kawah ini terkenal karena warna danau di dalamnya yang berwarna putih kehijauan akibat tingginya kandungan belerang dan gas-gas vulkanik"
+    },
+    {
+        "id":2,
+        "imgSrc":"https://i.imgur.com/y9l4qg9.jpeg",
+        "destTitle":"Ciherang",
+        "location":"Sumedang",
+        "tag":"Wisata Alam",
+        "fees":"Rp 25.000",
+        "loc":"https://maps.app.goo.gl/fUBKo4Ju5qcY4yQ89",
+        "description":"Wisata Kampung Ciherang, merupakan area kawasan wisata yang memanfaatkan lahan perhutani. Kawasan lebih dari 3 hektar ini dipenuhi pohon-pohon cemara dan pinus yang membuat areanya sangat sejuk meski saat siang hari."
+    },
+    {
+        "id":3,
+        "imgSrc":"https://i.imgur.com/KI1WREF.jpeg",
+        "destTitle":"Curug Cikondang",
+        "location":"Cianjur",
+        "tag":"Wisata Alam",
+        "fees":"Rp 5.000",
+        "loc":"https://maps.app.goo.gl/JoDc2vdR9dJTZZvZ9",
+        "description":"Curug Cikondang adalah sebuah air terjun cantik yang memiliki bentuk yang tinggi dan lebar, curug ini terletak di Kabupaten Cianjur, Desa Sukadana. Bentuk dari air terjun ini mengingatkan pada air terjun Niagara yang berada di negara Amerika."
+    },
+    {
+        "id":4,
+        "imgSrc":"https://i.imgur.com/zJjPpKJ.jpeg",
+        "destTitle":"Taman Safari Indonesia Bogor",
+        "location":"Bogor",
+        "tag":"Kebun Binatang",
+        "fees":"Rp 275.000",
+        "loc":"https://maps.app.goo.gl/AAbCLxquzSFeQLKq7",
+        "description":"Taman Safari Indonesia adalah tempat wisata keluarga berwawasan lingkungan yang berorientasi pada habitat satwa di alam bebas. Taman Safari Indonesia terletak di Desa Cibeureum Kecamatan Cisarua, Kabupaten Bogor, Jawa Barat atau yang lebih dikenal dengan kawasan Puncak"
+    },
+    {
+        "id":5,
+        "imgSrc":"https://i.imgur.com/ekc1KoT.jpeg",
+        "destTitle":"Green Canyon",
+        "location":"Pangandaran",
+        "tag":"Wisata Alam",
+        "fees":"Rp 45.000",
+        "loc":"https://maps.app.goo.gl/iqMPXm2gEyH4CMqz5",
+        "description":"Green Canyon atau Cukang Taneuh, adalah sebuah destinasi wisata alam yang terletak di Pangandaran, Jawa Barat. Tempat ini terkenal dengan keindahan alamnya yang memukau, terutama sungainya yang berwarna hijau tosca yang mengalir di antara tebing-tebing batu karang."
+    },
+    {
+        "id":6,
+        "imgSrc":"https://i.imgur.com/P23ZGfx.jpeg",
+        "destTitle":"Kebun Raya",
+        "location":"Bogor",
+        "tag":"Objek Wisata",
+        "fees":"Rp 25.000",
+        "loc":"https://maps.app.goo.gl/YMBuTsfhaMTWwWDt9",
+        "description":"Kebun Raya Bogor atau Kebun Botani Bogor adalah sebuah kebun botani besar yang terletak di Kota Bogor, Indonesia. Kebun ini dioperasikan oleh Badan Riset dan Inovasi Nasional. Kebun ini terletak di pusat kota Bogor dan bersebelahan dengan kompleks istana kepresidenan Istana Bogor"
+    },
+    {
+        "id":7,
+        "imgSrc":"https://i.imgur.com/51PVv8G.jpeg",
+        "destTitle":"Tangkuban Perahu",
+        "location":"Subang",
+        "tag":"Wisata Alam",
+        "fees":"Rp 30.000",
+        "loc":"https://maps.app.goo.gl/m1xEq58LBLpYJNjS9",
+        "description":"Gunung Tangkuban Parahu adalah salah satu gunung yang terletak di Desa Ciater, Kabupaten Subang, Provinsi Jawa Barat, Indonesia. Sekitar 20 km ke arah utara Kota Bandung, dengan rimbun pohon pinus dan hamparan kebun teh di sekitarnya, Gunung Tangkuban Parahu mempunyai ketinggian setinggi 2.084 meter"
+    },
+    {
+        "id":8,
+        "imgSrc":"https://i.imgur.com/BDhSxRJ.jpeg",
+        "destTitle":"Orchid Forest Cikole",
+        "location":"Bandung",
+        "tag":"Wisata Alam",
+        "fees":"Rp 60.000",
+        "loc":"https://maps.app.goo.gl/fAZyJdj4cSHeJJU69",
+        "description":"Orchid Forest Cikole adalah hutan anggrek terbesar di Indonesia. Enggak main-main, jumlah anggrek di sini mencapai 20.000 tanaman! Selain anggrek, barisan pohon pinus yang ada di sana juga membuat pemandangan Orchid Forest Cikole menjadi sangat indah."
+    },
+    {
+        "id":9,
+        "imgSrc":"https://i.imgur.com/Xpq5i2k.jpeg",
+        "destTitle":"Dusun Bambu Lembang",
+        "location":"Bandung",
+        "tag":"Objek Wisata",
+        "fees":"Rp 20.000",
+        "loc":"https://maps.app.goo.gl/fG9TS1hXk6ncmwgB6",
+        "description":"Dusun Bambu adalah sebuah tempat wisata yang terletak di Lembang, Bandung, Jawa Barat, Indonesia. Tempat ini menawarkan berbagai fasilitas rekreasi dan kuliner yang cocok untuk dikunjungi bersama keluarga atau teman-teman. Dusun Bambu memiliki suasana alam yang sejuk dan hijau, serta berbagai wahana seperti taman bermain, restoran, dan tempat belanja."
+    },
+    {
+        "id":10,
+        "imgSrc":"https://i.imgur.com/SVvc48U.jpeg",
+        "destTitle":"Astro Highland Ciater",
+        "location":"Subang",
+        "tag":"Wisata Alam",
+        "fees":"Rp 20.000",
+        "loc":"https://maps.app.goo.gl/KyBo87UZXWz5XvaF6",
+        "description":"Astro Highland Ciater Subang adalah sebuah resor peristirahatan yang terletak di Ciater, Subang, Jawa Barat, Indonesia. Ini adalah tempat populer untuk liburan karena pemandian air panas alaminya dan pemandangan pegunungan yang menakjubkan."
+    },
+    {
+        "id":11,
+        "imgSrc":"https://i.imgur.com/iMnoP9H.jpeg",
+        "destTitle":"Pantai Karang Gantungan",
+        "location":"Subang",
+        "tag":"Pantai",
+        "fees":"Rp 5.000",
+        "loc":"https://maps.app.goo.gl/89zb66Yw9tpc5VYx5",
+        "description":"Pantai Karang Gantungan terkenal dengan panorama alamnya yang menakjubkan, pasir putihnya yang lembut, dan air lautnya yang jernih. Terletak di Kabupaten Subang, pantai ini menjadi destinasi populer bagi wisatawan yang ingin menikmati keindahan alam dan aktivitas pantai."
+    },
+    {
+        "id":12,
+        "imgSrc":"https://i.imgur.com/VxLsUrU.jpeg",
+        "destTitle":"Maribaya Hot Spring Resort",
+        "location":"Lembang",
+        "tag":"Wisata Alam",
+        "fees":"Rp 35.000",
+        "loc":"https://maps.app.goo.gl/qfj49SXy1gwoweno7",
+        "description":"Maribaya Hot Spring Resort, terletak di Lembang, Jawa Barat, Indonesia, menawarkan pengalaman relaksasi dan pemandian air panas alami yang menarik. Resor ini dikenal dengan kualitas air belerang yang tinggi dan memiliki berbagai fasilitas yang memungkinkan pengunjung untuk menikmati berbagai aktivitas."
+    },
+    {
+        "id":13,
+        "imgSrc":"https://i.imgur.com/oxZDFod.jpg",
+        "destTitle":"Air Terjun Lembah Tepus",
+        "location":"Bogor",
+        "tag":"Wisata Alam",
+        "fees":"Rp 10.000",
+        "loc":"https://maps.app.goo.gl/LGgTeTPDhkcjNwoC8",
+        "description":"Air Terjun Lembah Tepus menawarkan berbagai aktivitas menarik, seperti trekking dan hiking, camping, dan berenang di tengah hutan. Pengunjung dapat menikmati keindahan alam yang menakjubkan dan suasana tenteram di tengah hutan."
+    },
+    {
+        "id":14,
+        "imgSrc":"https://i.imgur.com/yvGJT8s.jpg",
+        "destTitle":"Museum Geologi Bandung",
+        "location":"Bandung",
+        "tag":"Museum",
+        "fees":"Rp 2.000",
+        "loc":"https://maps.app.goo.gl/DUdWXdufX9BHBaSJ6",
+        "description":"Fasilitas yang ada di Museum Geologi Bandung ini cukup lengkap dan terawat dengan baik, Selain ruang peraga, Museum Geologi Bandung juga memiliki fasilitas tambahan lain seperti auditorium untuk pemutaran film, seminar dan kegiatan lainnya, ruang edukasi dan poliklinik."
+    },
+    {
+        "id":15,
+        "imgSrc":"https://i.imgur.com/oMgXmRM.jpg",
+        "destTitle":"The Great Asia Afrika",
+        "location":"Bandung",
+        "tag":"Objek Wisata",
+        "fees":"Rp 50.000",
+        "loc":"https://maps.app.goo.gl/xDLvSNjKnFqfbX3f9",
+        "description":"Di tempat ini Anda bisa menikmati wisata bersama keluarga sambil menikmati berbagai budaya dari 7 benua dengan kuliner tradisonal dari masing-masing benua tersebut. Terdapat berbagai macam bangunan iconic dari berbagai negara disini yang bisa Anda manfaatkan untuk berfoto dan mengabadikan momen bersama keluarga dan orang tersayang."
+    },
+    {
+        "id":16,
+        "imgSrc":"https://i.imgur.com/aizaWpU.jpg",
+        "destTitle":"Taman Hutan Raya Ir. H. Djuanda",
+        "location":"Bandung",
+        "tag":"Wisata Alam",
+        "fees":"Rp 15.000",
+        "loc":"https://maps.app.goo.gl/eYuidXyqh3aAffFv6",
+        "description":"Taman hutan ini merupakan salah satu destinasi favorit bagi warga Bandung dan sekitarnya, disini Anda bisa menikmati suasana hutan yang sejuk, rindang dan damai tanpa perlu hawatir tersesat karena sudah disediakan jalan setapak dan jalur pejalan kaki yang terawat dengan baik."
+    },
+    {
+        "id":17,
+        "imgSrc":"https://i.imgur.com/CDHbnnj.jpg",
+        "destTitle":"Curug Dago",
+        "location":"Bandung",
+        "tag":"Wisata Alam",
+        "fees":"Rp 15.000",
+        "loc":"https://maps.app.goo.gl/ykwhTPDt9Pf7XMzu5",
+        "description":"Curug Dago adalah sebuah air terjun yang terletak di Kecamatan Coblong, Dago, Bandung. Air terjun Curug Dago memang tidak terlalu tinggi, hanya sekitar 10 meter tingginya, namun air terjun tersembunyi ini sangatlah indah dan menarik untuk dilihat. Curug Dago tidak terlalu terkenal di telinga wisatawan, namun tidak ada salahnya mencoba datang ke Curug Dago."
+    },
+    {
+        "id":18,
+        "imgSrc":"https://i.imgur.com/aZBqZHZ.jpg",
+        "destTitle":"Farmhouse Lembang",
+        "location":"Bandung",
+        "tag":"Objek Wisata",
+        "fees":"Rp 30.000",
+        "loc":"https://maps.app.goo.gl/nDxSsK1z8P5AnaDq8",
+        "description":"Farmhouse Lembang Bandung menjadi objek wisata yang sangat cocok untuk pilihan liburan bersama orang terdekat, seperti pasangan, teman, sahabat, hingga keluarga. Objek wisata ini tersedia untuk semua kalangan usia. Tidak heran jika setiap hari atau akhir pekan tempat ini selalu ramai oleh wisatawan."
+    },
+    {
+        "id":19,
+        "imgSrc":"https://i.imgur.com/b4hRVjK.jpg",
+        "destTitle":"Kota Bunga Little Venice",
+        "location":"Cianjur",
+        "tag":"Objek Wisata",
+        "fees":"Rp 55.000",
+        "loc":"https://maps.app.goo.gl/hrbFq3H8PRuag1XRA",
+        "description":"Tempat wisata ini tidak cuma mengusung konsep miniatur dari kota Venesia, namun juga mengusung konsep miniatur kota-kota di belahan dunia seperti di Eropa, Asia, dan bahkan di tempat ini juga terdapat Miniatur Dufan yang berada di Jakarta."
+    }
+
+]

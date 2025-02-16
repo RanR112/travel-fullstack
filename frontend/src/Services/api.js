@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000"; // URL backend
+const API_URL = "https://travel-be-production.up.railway.app:8080"; // URL backend
 
 // Fungsi untuk mendapatkan data pembeli
 export const getPembeli = async () => {

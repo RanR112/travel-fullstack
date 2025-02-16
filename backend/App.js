@@ -16,4 +16,4 @@ app.use("/transaksi", transaksiRoute);
 app.use("/sendemail", emailRoute);
 
 const PORT = process.env.PORT;
-app.listen(PORT, () => console.log(`Server berjalan di http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server berjalan di travel-be-production.up.railway.app:${PORT}`));

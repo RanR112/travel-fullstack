@@ -15,5 +15,5 @@
   "scripts": {
   "start": "node App.js",
   "dev": "nodemon App.js"
-}
+  }
 }

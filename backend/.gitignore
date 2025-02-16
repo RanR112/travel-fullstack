@@ -1,0 +1,46 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache & Temp Files
+.cache/
+.temp/
+*.swp
+*.swo
+
+# Editor & OS Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+
+# Build Files (Jika ada build process)
+dist/
+build/
+
+# Midtrans Snap Cache (Jika menggunakan Snap API)
+midtrans-cache/
+
+# Ignore database dumps
+*.sql
+*.sqlite
+*.sqlite3
+dump.rdb
